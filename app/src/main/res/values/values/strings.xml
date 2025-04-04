@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Text Based Adventure game</string>
+    <string name="welcome">WELCOME...</string>
+    <string name="to_the">to the</string>
+    <string name="text_based">Text-Based</string>
+    <string name="adventure">Adventure</string>
+    <string name="game">GAME</string>
+    <string name="enter"><![CDATA[ Enter --> ]]></string>
+    <string name="cryndelwald">Cryndelwald</string>
+    <string name="land_of_the_beginning">Land of \'The Beginning\'</string>
+    <string name="analyse_class">Analyse Class</string>
+    <string name="hybrid">Wow! Seems like you\'re a Hybrid!</string>
+    <string name="elf">ELF -- high Spd.</string>
+    <string name="knight">KNIGHT -- high Atk.</string>
+    <string name="wizard">WIZARD -- high Int.</string>
+    <string name="guardian">GUARDIAN -- high Def.</string>
+    <string name="pick_your_class">Pick Your Class</string>
+    <string name="the_sorting_crystal">The Sorting Crystal</string>
+    <string name="your_stats">Your Stats have been defrosted and energized by</string>
+    <string name="atk_50">ATK -- 50</string>
+    <string name="def_30">DEF -- 30</string>
+    <string name="int_20">INT -- 20</string>
+    <string name="spd_15">SPD -- 15</string>
+    <string name="proceed"><![CDATA[Proceed -->]]></string>
+</resources>

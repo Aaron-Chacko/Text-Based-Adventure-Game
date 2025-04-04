@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aaron.tbav">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TBAV"
+        tools:targetApi="31">
+        <activity
+            android:name=".Shadowed_grove"
+            android:exported="false" />
+        <activity
+            android:name=".Whispering_trail"
+            android:exported="false" />
+        <activity
+            android:name=".Winding_path"
+            android:exported="false" />
+        <activity
+            android:name=".blackthorn2"
+            android:exported="false" />
+        <activity
+            android:name=".BlacksmithActivity"
+            android:exported="false" />
+        <activity
+            android:name=".blackthorn_forest"
+            android:exported="false" />
+        <activity
+            android:name=".elderswood"
+            android:exported="false" />
+        <activity
+            android:name=".knights_quest"
+            android:exported="false" />
+        <activity
+            android:name=".valoria"
+            android:exported="false" />
+        <activity
+            android:name=".knight"
+            android:exported="false" />
+        <activity
+            android:name=".wizard"
+            android:exported="false" />
+        <activity
+            android:name=".guardian"
+            android:exported="false" />
+        <activity
+            android:name=".elf"
+            android:exported="false" />
+        <activity
+            android:name=".cl_select"
+            android:exported="false" />
+        <activity
+            android:name=".class_analyse"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
