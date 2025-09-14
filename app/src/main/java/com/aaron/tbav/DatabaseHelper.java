@@ -86,6 +86,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    //Reset DB stat data ---------------------
+    public void resetPlayerStats() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.execSQL("DELETE FROM " + TABLE_PLAYER_STATS);
+        db.close();
+    }
+
     // Retrieve player stats------------------------------------------------------------------------------------
     public Cursor getPlayerStats() {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -118,6 +125,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public int getPlayerDefence() {
         return getPlayerStat(COLUMN_DEFENCE);
+    }
+
+    // <-- Add getPlayerId here
+    public int getPlayerId() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_PLAYER_STATS, new String[]{COLUMN_ID}, null, null, null, null, null);
+        int id = -1;
+        if (cursor != null && cursor.moveToFirst()) {
+            id = cursor.getInt(0);
+            cursor.close();
+        }
+        return id;
     }
 
     public int getPlayerSpeed() {

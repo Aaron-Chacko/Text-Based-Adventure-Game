@@ -25,8 +25,8 @@ public class knight extends AppCompatActivity {
             return insets;
         });
 
-        int currentHealth = 100;
-        int maxHealth = 100;
+        int currentHealth = 500;
+        int maxHealth = 500;
         int attack = 50;
         int defence = 30;
         int speed = 15;
@@ -34,6 +34,7 @@ public class knight extends AppCompatActivity {
         int potions = 0;
 
         try (DatabaseHelper db = new DatabaseHelper(this)) {
+            db.resetPlayerStats(); // to clear old stacked stat data
             db.insertPlayerStats(currentHealth, maxHealth, attack, defence, speed, intelligence, potions);
         }
         catch (Exception e) {

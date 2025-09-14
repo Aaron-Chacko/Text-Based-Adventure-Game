@@ -43,24 +43,26 @@ public class BlacksmithActivity extends AppCompatActivity {
         Button fortifyArmor = findViewById(R.id.btn_fortify_armor);
         Button receivePotions = findViewById(R.id.btn_receive_potions);
 
+        int playerId = db.getPlayerId();
+
         // Set the OnClickListener for the button---------------------------------------------------------
         refineWeapon.setOnClickListener(v -> {
             attack += 5; // Increase the attack by 5
-            db.updatePlayerStat(DatabaseHelper.COLUMN_ATTACK, attack, 1); // Update the database using the individual update method
+            db.updatePlayerStat(DatabaseHelper.COLUMN_ATTACK, attack, playerId); // Update the database using the individual update method
             Toast.makeText(BlacksmithActivity.this, "Weapon refined! Attack increased by 5.", Toast.LENGTH_SHORT).show();// Display confirmation
             refineWeapon.setEnabled(false);
         });
 
         fortifyArmor.setOnClickListener(v -> {
             defence += 5;
-            db.updatePlayerStat(DatabaseHelper.COLUMN_DEFENCE, defence, 1);
+            db.updatePlayerStat(DatabaseHelper.COLUMN_DEFENCE, defence, playerId);
             Toast.makeText(BlacksmithActivity.this, "Armor fortified! Defence increased by 5.", Toast.LENGTH_SHORT).show();
             fortifyArmor.setEnabled(false);
         });
 
         receivePotions.setOnClickListener(v -> {
             potions += 3;
-            db.updatePlayerStat(DatabaseHelper.COLUMN_POTIONS, potions, 1);
+            db.updatePlayerStat(DatabaseHelper.COLUMN_POTIONS, potions, playerId);
             Toast.makeText(BlacksmithActivity.this, "3 Potions received!", Toast.LENGTH_SHORT).show();
             receivePotions.setEnabled(false);
         });
