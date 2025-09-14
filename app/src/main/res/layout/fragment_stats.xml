@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Health: 0/0"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/cinzel"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 
@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:text="Attack: 0"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/cinzel"
         android:textSize="16sp" />
 
     <TextView
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Defence: 0"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/cinzel"
         android:textSize="16sp" />
 
     <TextView
@@ -37,6 +39,7 @@
         android:layout_height="wrap_content"
         android:text="Speed: 0"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/cinzel"
         android:textSize="16sp" />
 
     <TextView
@@ -45,6 +48,7 @@
         android:layout_height="wrap_content"
         android:text="Intelligence: 0"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/cinzel"
         android:textSize="16sp" />
 
     <TextView
@@ -53,6 +57,7 @@
         android:layout_height="wrap_content"
         android:text="Potions: 0"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/cinzel"
         android:textSize="16sp" />
 
 </LinearLayout>
